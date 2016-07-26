@@ -50,6 +50,12 @@ DDLog.addLogger(sentryLogger)
 
 Now you can call the CocoaLumberjack logging functions (`DDLogDebug`, `DDLogInfo`, `DDLogWarn`, `DDLogError`) and a Sentry log event will be created.
 
+If you only want to see a certain level, such as errors, add with a level
+
+```
+DDLog.addLogger(sentryLogger, withLevel: .Error)
+```
+
 ### Sentry properties
 
 On the `MSSentryLogger` instance you can modify values for `user`, `tags` and `extra`. These are `[String: AnyObject]` dictionaries and the set values will be send in the next requests.
