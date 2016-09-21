@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MSSentryCocoaLumberjack'
-  s.version          = '0.1.0'
-  s.summary          = 'Custom CocoaLumberjack logger for Sentry'
+  s.version          = '0.2.0'
+s .summary          = 'Custom CocoaLumberjack logger for Sentry'
 
   s.description      = <<-DESC
 MSSentryLogger is a custom logger for CocoaLumberjack that logs to Sentry.

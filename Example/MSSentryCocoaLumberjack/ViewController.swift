@@ -111,7 +111,7 @@ class ViewController: UITableViewController {
     }
     
     func setUser() {
-        var userDic:[String: AnyObject] = [:]
+        var userDic:[String: NSObject] = [:]
         
         if let userId = userIdTextField.text where userId.characters.count > 0 {
             userDic["id"] = userId
@@ -133,7 +133,7 @@ class ViewController: UITableViewController {
     }
     
     func setTagsAndExtraData() {
-        var extraDic:[String: AnyObject] = [:]
+        var extraDic:[String: NSObject] = [:]
         
         if let extra1 = extraValue1TextField.text where extra1.characters.count > 0 {
             extraDic["key1"] = extra1

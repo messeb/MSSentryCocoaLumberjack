@@ -18,6 +18,26 @@ It contains a mapping from the CocoaLumberJack `DDLogFlag` to the `RavenLogEvent
 | DDLogWarn       | Warning|
 | DDLogError      | Error  |
 
+### Custom tags and extra
+
+You can add custom tags und extra data in your CocoaLumberjack message.
+
+Custom tags can be added as semicolon seperated list in square brackets, like
+```
+[id=userId;version=1.2.0;filename=Class.swift]
+```
+
+Custom extra data can be added as semicolon seperated list in curly brackets, like
+```
+{device=iPhone7;action=readFile}
+```
+
+A complete message can be:
+```
+Fatal error message, can execute action [id=userId;version=1.2.0;filename=Class.swift] {device=iPhone7;action=readFile}
+```
+
+
 ##Installation
 
 Using [CocoaPods](http://www.cocoapods.org):
